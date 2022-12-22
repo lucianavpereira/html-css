@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        h1 {
+            padding: 10px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários com elementos de number, month, date e time</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome do Aluno:</label>
+            <input type="text" name="nome" id="inome" maxlength="40" required placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média da Nota:</label>
+            <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.1" value="5">
+        </p>
+        <p>
+            <label for="imes">Período Letivo:</label>
+            <input type="month" name="mes" id="imes" value="2022-10">
+        </p>
+        <p>
+            <label for="idata">Data da Prova:</label>
+            <input type="date" name="data" id="idata" value="2022-10-10">
+        </p>
+        <p>
+            <label for="ihora">Hora da Prova:</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
